@@ -1,0 +1,203 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/credentials" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>CredentialManagement</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Credentials.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>CredentialManagement</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Credentials.Activities</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="925.9999999999999,1478.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,1456" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1ea1ea61-7f89-4e5b-b99f-3fafaedfa2b8" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1214" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ss:SecureString" Name="strPassword" />
+              <Variable x:TypeArguments="x:String" Name="strUserName" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ea1ea61-7f89-4e5b-b99f-3fafaedfa2b8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="shopper.com" CVScreenId="726f7dd9-3877-4bc5-9ca2-f9aa0bf7013f" ContentHash="wilTh9JVTUqOMiHKtQZrfg" CvTextArea="1427, 255, 67, 25" CvTextArgument="Log In" CvType="Text" DesignTimeRectangle="1428, 253, 67, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='_caption' parentid='header-container' tag='DIV' type='' aaname='Log In' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Log In' /&gt;" Guid="acc04ccd-a4d7-4c0d-95fc-b8b691fa5668" InformativeScreenshot="0ccfc44035607d691b30bfb134abe3c2.png" Reference="llzc_agnP02G_UhvRVSLZw/xi6iowjFW0izchyGk3Wc0g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Earn by promoting your favorite products — Shopper.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="726f7dd9-3877-4bc5-9ca2-f9aa0bf7013f" CvTextArea="1427, 255, 67, 25" CvTextArgument="Log In" CvType="Text" DesignTimeRectangle="1398, 240, 127, 54" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='_base_button _push_button _small_button _full_width undefined' aaname='Log In' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Log In' /&gt;" Guid="cdcaa551-890a-41dc-a414-b2dea462917e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <p:GetSecureCredential CredentialType="Generic" DisplayName="Get Secure Credentials" sap:VirtualizedContainerService.HintSize="382,114" sap2010:WorkflowViewState.IdRef="GetSecureCredential_1" Password="[strPassword]" PersistanceType="Enterprise" Target="ACMELogin" Username="[strUserName]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1ea1ea61-7f89-4e5b-b99f-3fafaedfa2b8" Text="[strUserName]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="shopper.com/login" CVScreenId="3c379f8e-b72e-451e-9a11-9c5516e2c11b" ContentHash="KPiRO_E2qkuloyPQrKpAUw" CvElementArea="642, 624, 633, 78" CvType="InputBox" DesignTimeRectangle="644, 626, 630, 75" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="f442b3b3-4d19-453a-ad46-6f60c650c8be" InformativeScreenshot="5507a7bbcdb8307e217ee1b07400332e.png" Reference="llzc_agnP02G_UhvRVSLZw/aWm8j4bKR0WQANYrj_PVcQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login — Shopper.com' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT(2)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,292.6666666666667" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="1ea1ea61-7f89-4e5b-b99f-3fafaedfa2b8" SecureText="[strPassword]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="shopper.com/login" CVScreenId="3c379f8e-b72e-451e-9a11-9c5516e2c11b" ContentHash="gHiWMQNoIU-1hgtdwUjdEA" CvElementArea="642, 724, 633, 78" CvType="InputBox" DesignTimeRectangle="644, 725, 630, 75" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" Guid="7a4cb617-2564-4082-85cf-b4ec019dfce3" InformativeScreenshot="7ab298b57dab4037c6cf4ec495fa6182.png" Reference="llzc_agnP02G_UhvRVSLZw/BloxHwrB6USWv1MhFMVKow" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login — Shopper.com' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="382,222.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1ea1ea61-7f89-4e5b-b99f-3fafaedfa2b8" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="shopper.com/login" CVScreenId="3c379f8e-b72e-451e-9a11-9c5516e2c11b" ContentHash="dk3fmdCz70K3ylvMt2JSFA" CvElementArea="640, 855, 637, 98" CvTextArea="918, 888, 81, 34" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="644, 860, 630, 90" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='_signup_container_body_create_button _signup_container_field_container' aaname='Login Logging to your page' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Login' /&gt;" Guid="036b1e36-5dcc-44fe-9484-67758d676ae6" InformativeScreenshot="baa7c525b89723b54fe385f0243ee617.png" Reference="llzc_agnP02G_UhvRVSLZw/LmIr3TI0J0-icAwvFb8-cg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login — Shopper.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="3c379f8e-b72e-451e-9a11-9c5516e2c11b" CvElementArea="640, 855, 637, 98" CvTextArea="918, 888, 81, 34" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="644, 890, 630, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='login_button_text' parentid='signInForm' tag='DIV' type='' aaname='Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Login' /&gt;" Guid="2f8b4be3-7f28-4314-be64-2df6dc84a4dc" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="8FWPaDbXZEaAm9GDqrmqbg" IconBase64="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" InformativeScreenshot="dceff2110b23363b06368b88fbdbda56.jpg" Reference="llzc_agnP02G_UhvRVSLZw/6q3-nVsodUSZ2W_oiuDEvw" Selector="&lt;html app='chrome.exe' title='Earn by promoting your favorite products — Shopper.com' /&gt;" Url="https://www.shopper.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
